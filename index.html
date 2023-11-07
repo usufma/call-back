@@ -1,0 +1,53 @@
+<!---------------- CallBack ------------>
+
+
+
+
+<!------------------ 2 ----------------->
+let ans,ans2,ans3;
+function operation(n1,n2,callback){
+	let c=n1/n2;
+	callback(c);
+	}
+	operation(60,2,divide=>{
+		ans=divide;
+		console.log("Answer:"+ans);
+	})
+	operation(ans,3,divide=>{
+		ans2=divide;
+		console.log("Answer:"+ans2);
+	})
+	operation(ans2,5,divide=>{
+		ans3=divide;
+		console.log("Answer:"+ans3);
+	})
+	
+	
+	OUTPUT 
+	Answer:30
+	Answer:10
+	Answer:2
+<!---------------- 3 ----------------->
+let res1,res2,res3;
+function operation2(n1,n2,cb){
+	let k=n1+n2;
+	cb(k);
+	}
+	operation2(10,5,sum=>{
+		res1=sum;
+		console.log("ans:"+res1);
+	})
+	operation2(res1,10,sum=>{
+		res2=sum;
+		console.log("ans:"+res2);
+	})
+	operation2(res2,2,sum=>{
+		res3=sum;
+		console.log("ans:"+res3);
+	})
+	
+	output
+	ans:15
+	ans:25
+	ans:27
+
